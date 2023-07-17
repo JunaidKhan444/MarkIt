@@ -55,7 +55,6 @@ export class AuthService {
                 email: dto.email,
             }
         })
-        // if user does not exist throw exception 
         //Gaurd Condition
         if (!user) throw new ForbiddenException("Credentials Incorrect",);
 
@@ -66,7 +65,6 @@ export class AuthService {
         if (!pwMatches) throw new ForbiddenException("Credentials Incorrect",);
 
         // send back the user
-
         return this.signToken(user.id, user.email);
     }
 
@@ -84,10 +82,5 @@ export class AuthService {
         return {
             access_token: token
         }
-
-        // return this.jwt.signAsync(payload, {
-        //     expiresIn: "15m",
-        //     secret: secret
-        // });
     }
 }
