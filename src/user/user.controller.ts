@@ -5,12 +5,14 @@ import {
     Patch,
     UseGuards,
 } from '@nestjs/common';
+import { ApiTags } from '@nestjs/swagger';
 import { User } from '@prisma/client';
 import { GetUser } from '../auth/decorator';
 import { JwtGuard } from '../auth/guard';
 import { EditUserDto } from './dto';
 import { UserService } from './user.service';
 
+@ApiTags('User')
 @UseGuards(JwtGuard)
 @Controller('users')
 export class UserController {
