@@ -17,7 +17,7 @@ This project is a bookmark management API built with NestJS, Docker, PostgreSQL,
 - Docker
 - NestJS
 
-# #Contributing
+## Contributing
 
 Contributions are welcome! If you'd like to contribute, please follow these steps:
 
