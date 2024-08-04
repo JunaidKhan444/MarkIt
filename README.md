@@ -1,4 +1,4 @@
-# NestJS JWT Auth Bookmarks API 📘🔒
+# MarkItI 📘🔒
 
 This project is a bookmark management API built with NestJS, Docker, PostgreSQL, and JWT authentication. It provides user registration, login, and the ability to manage bookmarks with JWT token-based authentication.
 
